@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/game.css">
+		<title>Triba</title>
+	</head>
+	<body onload="startGame()">
+
+		<div class="overlay" id="game-overlay">
+	    </div>
+
+	    <!-- Meni -->
+	    <div class="box" id="game">
+	    	<h1>TRIBA</h1>
+			<button id="nova-igra">Nova igra</button>
+			<button id="upute">Upute</button>
+			<button id="oProjektu">O projektu</button>
+	    </div>
+
+	    <!-- Ako je kraj igre -->
+
+		<div class="overlay" id="game-over-overlay">
+	    </div>
+
+	    <div class="box" id="game-over">
+			<h1>GAME OVER</h1>
+			<h2 id="pobjednik"><h2>
+			<button id="igraj-opet">Igraj ponovo</button>
+	    </div>
+
+	    <!-- Upute -->
+
+	    <div class="skriveno" id="tekstUputa">
+	    	<a href="index.html"><button class="nazad">Nazad</button></a>
+	    	<p>Igra je za dva igrača, A i B (A igra prvi).</p>
+	    	<p>U svakom potezu igrač koji je na redu bira tri tačke (koje nisu sve na istoj pravoj) koje čine trougao.</p>
+	    	<p>Ukoliko taj trougao ne siječe i ne dodiruje ni jedan od prethodno nacrtanih trouglova, i on se crta.</p>
+	    	<p>Igra je završena kada jedan igrač ostane bez poteza.</p>
+	    	<p>Igrač koji je zadnji odigrao potez pobjeđuje.</p>
+	    </div>
+
+	    <!-- O projektu -->
+
+	    <div class="skriveno" id="tekstProjekta">
+	    	<a href="index.html"><button class="nazad">Nazad</button></a>
+	    	<p>Predmet: Web programiranje</p>
+	    	<p>Profesor: doc. dr. Elmedin Selmanović</p>
+	    	<p>Asistent: Sead Delalić</p>
+	    	<p>Fakultet: Prirodno-matematički fakultet u Sarajevu</p>
+	    	<p>Smjer: Teorijska kompjuterska nauka</p>
+	    	<p>Student: Adisa Bolić</p>
+	    	<p>E-mail: adisa.bolic@gmail.com</p>
+	    </div>
+
+	    <!-- Odabir ploče za igru -->
+
+		<div class="skriveno box" id="izborPloce">
+	    	<a href="index.html"><button class="nazad">Nazad</button></a><br><br><br>
+	    	<button id="igra1">Ploča 8x8</button>
+	    	<button id="igra2">Ploča 4x6</button>
+	    	<button id="igra3">Ploča 8x6</button><br><br>
+	    	<button id="igra4">Trougaona ploča (visine 6)</button>
+	    </div>
+
+	    <script type="text/javascript" src="js/utils.js"></script>
+		<script type="text/javascript" src="js/logics.js"></script>
+		<script type="text/javascript" src="js/game.js"></script>
+	</body>
+</html>
